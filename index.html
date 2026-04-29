@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo formativo dispositivos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(rgba(15,23,42,0.8), rgba(30,58,138,0.8)),
+                  url('img/6.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #f1f5f9;
+      padding: 50px 20px;
+      text-align: center;
+      border-bottom: 4px solid #38bdf8;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+
+    header h2 {
+      margin: 10px 0 20px 0;
+      font-weight: normal;
+      color: #e0e7ff;
+      font-size: 24px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+
+    .info {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #f1f5f9;
+      background: rgba(0,0,0,0.3);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .main { display: flex; min-height: 100vh; }
+
+    nav {
+      background: #1e293b;
+      width: 220px;
+      padding: 20px 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      margin: 8px 0;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 6px;
+    }
+
+    nav a:hover { background: #334155; }
+
+    nav a.active {
+      background: #38bdf8;
+      color: #0f172a;
+    }
+
+    nav a.active::before { content: "➤ "; }
+
+    .container { padding: 20px; flex: 1; }
+
+    .card {
+      display: none;
+      background: #f8fafc;
+      padding: 25px;
+      margin: 15px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border-left: 5px solid #38bdf8;
+      max-width: 900px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .card img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card.active {
+      display: block;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateX(-10px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    h2 { color: #1e3a8a; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>MÓDULO FORMATIVO DISPOSITIVOS</h1>
+  <h2>PROYECTO STEAM FASE 3</h2>
+  <div class="info">
+    <p><strong>Nombre:</strong> DAMIAN NAVAS</p>
+    <p><strong>Curso:</strong> 3RO DISPOSITIVOS</p>
+    <p><strong>Fecha:</strong> 28/04/2026</p>
+  </div>
+</header>
+
+<div class="main">
+
+<nav>
+  <a onclick="toggleSection('nube', this)">La nube</a>
+  <a onclick="toggleSection('red', this)">Red social</a>
+  <a onclick="toggleSection('enlace', this)">Enlace</a>
+  <a onclick="toggleSection('formato', this)">Formato web</a>
+  <a onclick="toggleSection('uso', this)">Uso de enlaces</a>
+</nav>
+
+<div class="container">
+
+   <div class="card" id="nube">
+    <img src="img/1.jpg">
+    <h2>¿Qué es la nube?</h2>
+    <p>La nube es un sistema que permite el almacenamiento de datos prácticamente ilimitado, gestionar y procesar datos a través de internet en servidores remotos. En lugar de guardar información en un dispositivo físico como una computadora, los datos se alojan en centros de datos accesibles desde cualquier lugar. Es decir que podemos acceder a esos datos sin importar el dispositivo en el que estemos.</p>
+<img src="img/10.jpg">
+<h2>Características</h2>
+<p>El almacenamiento en la nube se ha convertido en un objetivo fundamental en el crecimiento de cualquier empresa como una herramienta para el progreso empresarial.</p>
+<p>Permite el acceso a programas y archivos desde cualquier dispositivo. Además, posibilita la supervisión de archivos desde cualquier ubicación, eliminando la restricción de operar desde un lugar fijo.</p>
+<p>A lo largo del tiempo, las empresas han invertido considerables recursos financieros en mejorar sus equipos. La irrupción de la nube ha cambiado esta dinámica.
+Ahora, la mayoría de los programas están en línea, por lo que no es preciso instalarlos. Esto conlleva una notable reducción en los gastos empresariales.</p>
+<img src="img/9.jpg">
+  </div>
+
+  <div class="card" id="red">
+    <img src="img/2.jpg">
+    <h2>¿Cuál es una red social?</h2>
+    <p>Una red social es una plataforma digital diseñada para conectar personas, permiten a grupos y organizaciones conectarse, interactuar y compartir contenido en tiempo real, sin importar su ubicación geográfica. Funcionan como comunidades virtuales basadas en intereses comunes facilitando la interacción global.</p>
+<img src="img/11.jpg">
+<h2>Características</h2>
+<p>Están formadas por una comunidad virtual, que son comunidades masivas que se extienden a lo largo del planeta logrando generar un gran impacto y extendiendo su comunidad globalmente.</p>
+<p>Permiten a cada usuario crear un perfil dentro de la red y generar contenido de acuerdo a sus gustos además de expresar  sus ideas de manera libre para generar un impacto en comunidades con la finalidad de ser viral.</p>
+<p>Brindan acceso inmediato a noticias y actualizaciones de los usuarios, todo en tiempo real.</p>
+<img src="img/12.jpg">
+  </div>
+
+  <div class="card" id="enlace">
+    <img src="img/3.jpg">
+    <h2>¿Qué es un enlace?</h2>
+    <p>Un enlace es un elemento interactivo en una página web que, al hacer clic, te dirige a otra página o recurso. Por lo general, se destaca mediante un color diferente o subrayado para resaltar su funcionalidad. Es fundamental para la navegación web porque conecta diferentes contenidos.</p>
+<img src="img/7.jpg">
+<h2>Estructura de un enlace </h2>
+<p>Todo enlace o hipervínculo se compone de dos partes o extremos: un ancla de origen y un punto de destino.</p>
+<p>Ancla de origen. Es el elemento presente en el documento inicial que permite el salto hacia un nuevo destino. Puede ser una palabra o un conjunto de palabras, un ícono, una imagen o un botón.</p>
+<p>Punto de destino. Es el recurso hacia el cual se avanza a través del hipervínculo, o sea, el documento o archivo enlazado al ancla de origen. Puede ser de distinta naturaleza: páginas web, documentos de texto, imágenes, videos, aplicaciones, descargas, entre muchos otros.</p>
+<img src="img/8.jpg">
+<h2>Características</h2>
+<p>Puedes colocar un enlace o hipervínculo tanto en textos como en imágenes.</p>
+<p>Son fundamentales para la experiencia de usuario y la navegación.</p>
+<p>Brindan un mejor efecto visual, es decir hace a una pagina web interactiva lo que genera mas impacto en los usuarios.</p>
+
+  </div>
+
+  <div class="card" id="formato">
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Formato web">
+    <h2>¿Cómo funciona un formato web?</h2>
+    <p>El formato web se basa en HTML, CSS y JavaScript. Estas tecnologías nos permite agregar contenido, estructura, diseño a nuestra página y permiten interacción en una página. Compuesta por diferentes elementos, como encabezados, párrafos, imágenes, enlaces y listas.</p>
+<img src="img/13.jpg">
+<h2>Elementos de una página web</h2>
+<p>Encabezado: franja inicial de la página web, donde se encuentran el título, el logotipo y otras señales de identificación visual. También puede hallarse aquí el menú de navegación, que contiene vínculos al resto de las páginas web que componen el sitio, o una herramienta de búsqueda que conduzca al usuario directamente al contenido que necesita.</p>
+<p>Cuerpo: franja intermedia de la página web y la más importante, pues allí se encuentra el grueso del contenido, que puede consistir en texto, imágenes, videos o combinaciones de los tres. Esta sección suele estar acompañada de barras de desplazamiento, para que el usuario pueda moverse dentro de la página.</p>
+<p>Pie: franja inferior de la página web, donde suelen hallarse aspectos tangenciales a la navegación, como son las políticas de la empresa, el vínculo a la página de contacto, la identificación de sus desarrolladores o información semejante.</p>
+<img src="img/14.jpg">
+  </div>
+
+  <div class="card" id="uso">
+  <img src="img/4.jpg">
+    <h2>¿Para qué sirven los enlaces?</h2>
+    <p>Un enlace, también llamado hipervínculo, dentro de un formato web es un elemento interactivo que dirige al usuario a otro recurso, ventana o página. Es esencial para la navegación porque conecta diferentes contenidos dentro de internet, lo que nos permite conectar ideas y hacer al formato web más interactivo ya visualmente atractivo.</p>
+<p>En este sentido, los hipervínculos permiten el salto de un recurso a otro que no necesariamente comparte el mismo contexto, pero que está relacionado con él a partir de algún término, tema o referencia.</p>
+<p>Por ejemplo, en las páginas de enciclopedias digitales, se utilizan hipervínculos para ofrecerle al lector un camino hacia contenidos adicionales que podrían ser pertinentes o relevantes, pero no tanto como para formar parte del artículo principal.</p>
+<img src="img/15.jpg">
+  </div>
+
+</div>
+
+</div>
+
+<script>
+  function toggleSection(id, element) {
+    const sections = document.querySelectorAll('.card');
+    const links = document.querySelectorAll('nav a');
+    const current = document.getElementById(id);
+
+    if (current.classList.contains('active')) {
+      current.classList.remove('active');
+      element.classList.remove('active');
+      localStorage.removeItem('activeSection');
+      return;
+    }
+
+    sections.forEach(sec => sec.classList.remove('active'));
+    links.forEach(link => link.classList.remove('active'));
+
+    current.classList.add('active');
+    element.classList.add('active');
+
+    localStorage.setItem('activeSection', id);
+  }
+
+  window.onload = function() {
+    const saved = localStorage.getItem('activeSection');
+    if (saved) {
+      const link = document.querySelector(`nav a[onclick*="${saved}"]`);
+      if (link) toggleSection(saved, link);
+    }
+  }
+</script>
+
+</body>
+</html>
